@@ -181,7 +181,7 @@ p:last-child {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 80px 20px 60px;
+  padding: 40px 20px 48px;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -403,7 +403,7 @@ p:last-child {
   }
 
   .hero {
-    padding: 56px 20px 48px;
+    padding: 28px 20px 36px;
   }
 
   .headshot {
