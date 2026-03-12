@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mia Maiers — Business Analytics &amp; Information Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <span class="nav-name">Mia Maiers</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero" class="hero" aria-labelledby="hero-name">
+      <img
+        src="images/headshot.jpeg"
+        alt="Mia Maiers professional headshot"
+        class="headshot"
+        width="160"
+        height="160"
+      >
+      <h1 id="hero-name">Mia Maiers</h1>
+      <p class="hero-tagline">Aspiring Business Analyst</p>
+      <p class="hero-sub">Business Analytics &amp; Information Systems · University of Iowa · May 2026</p>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="section-inner">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I'm a junior at the University of Iowa studying Business Analytics and Information Systems,
+          graduating May 2026. I maintain a 4.03 GPA and am a member of Beta Gamma Sigma honor
+          society and the Tippie Business Honor Society.
+        </p>
+        <p>
+          My focus is on turning raw data into decisions that matter. This spring, I return to
+          Decker Concrete full-time as a Business Analyst — building on the financial modeling and
+          cost analysis work I did there as an intern in summer 2024.
+        </p>
+        <p>
+          Outside the classroom, I work as a Recruiting &amp; Operations Assistant for University of
+          Iowa Football, where I apply analytical and Excel skills to support coaches, staff, and
+          50+ prospective student-athletes.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
+      <div class="section-inner">
+        <h2 id="skills-heading">Skills</h2>
+
+        <div class="skills-group">
+          <h3>Tools</h3>
+          <ul class="tag-list" aria-label="Technical tools">
+            <li><span class="tag tag-accent">Excel</span></li>
+            <li><span class="tag tag-accent">Python</span></li>
+            <li><span class="tag tag-accent">Power BI</span></li>
+            <li><span class="tag tag-accent">Access</span></li>
+            <li><span class="tag tag-accent">SQL</span></li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3>Analytical Techniques</h3>
+          <ul class="tag-list" aria-label="Analytical techniques">
+            <li><span class="tag tag-secondary">Data Modeling</span></li>
+            <li><span class="tag tag-secondary">Pivot Tables</span></li>
+            <li><span class="tag tag-secondary">Forecasting</span></li>
+            <li><span class="tag tag-secondary">Dashboards</span></li>
+            <li><span class="tag tag-secondary">Regression Analysis</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="section-inner">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card" aria-labelledby="project-blotter">
+            <h3 id="project-blotter">Iowa City Police Blotter Dashboard</h3>
+            <p>
+              Built an interactive Excel dashboard using public offense data from ICGov.org.
+              Imported and transformed raw records to identify trends across charge types,
+              locations, days of the week, and time of day using pivot tables.
+            </p>
+            <ul class="project-tags" aria-label="Technologies used">
+              <li><span class="tag tag-accent">Excel</span></li>
+              <li><span class="tag tag-accent">Pivot Tables</span></li>
+              <li><span class="tag tag-accent">Dashboards</span></li>
+            </ul>
+          </article>
+
+          <article class="project-card" aria-labelledby="project-heart">
+            <h3 id="project-heart">Heart Attack Susceptibility Analysis</h3>
+            <p>
+              Analyzed hundreds of patient records from Kaggle — including age, lifestyle factors,
+              family history, and regional demographics — to build a multi-variable regression model
+              predicting heart attack risk percentage. Refined variable selection based on p-values
+              to improve model accuracy.
+            </p>
+            <ul class="project-tags" aria-label="Technologies used">
+              <li><span class="tag tag-accent">Python</span></li>
+              <li><span class="tag tag-accent">Regression Analysis</span></li>
+              <li><span class="tag tag-accent">Data Modeling</span></li>
+            </ul>
+          </article>
+
+          <article class="project-card" aria-labelledby="project-aflac">
+            <h3 id="project-aflac">Aflac Churn Project</h3>
+            <p>
+              Applied data-driven insights and AI-powered interventions to model and reduce customer
+              churn for Aflac. Translated analytical findings into actionable retention strategies
+              focused on measurable business outcomes.
+            </p>
+            <ul class="project-tags" aria-label="Technologies used">
+              <li><span class="tag tag-accent">Forecasting</span></li>
+              <li><span class="tag tag-accent">Data Modeling</span></li>
+              <li><span class="tag tag-accent">AI Interventions</span></li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="section-inner">
+        <h2 id="contact-heading">Contact</h2>
+        <p>I'm open to connecting with professionals and recruiters in the Iowa business community.</p>
+        <ul class="contact-list" aria-label="Contact links">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mia-maiers/"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Connect with Mia Maiers on LinkedIn"
+            >
+              <svg class="contact-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.45 20.45h-3.554v-5.569c0-1.328-.024-3.037-1.85-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.356V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.284zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/miamaiers"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Mia Maiers' projects on GitHub"
+            >
+              <svg class="contact-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:miamaiers@uiowa.edu"
+              class="contact-link"
+              aria-label="Send an email to Mia Maiers"
+            >
+              <svg class="contact-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              miamaiers@uiowa.edu
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Mia Maiers</p>
+  </footer>
+
 </body>
 </html>
